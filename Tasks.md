@@ -11,7 +11,7 @@
    3 - Test.**(23/11)**<br/>
    4 - Working to build a mobile app.**(25/11)**<br/>
 ## PCB
-   1 - Choose the Battery and how to Charge it .**(3/11)**<br/>
+   1 - Choose the Battery and how to Charge it .**(7/11)**<br/>
    2 - Test.**(9/11)**<br/>
    3 - Make an Optimized PCBs to hold all Components.**(15/11)**<br/>
    4 - Manufacturing.**(23/11)**<br/>
