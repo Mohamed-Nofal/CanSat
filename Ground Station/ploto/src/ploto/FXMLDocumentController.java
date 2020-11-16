@@ -16,15 +16,15 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 
-import java.io.File;
-import java.io.IOException;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Scanner;
+//import java.io.File;
+//import java.io.IOException;
+//import java.nio.charset.StandardCharsets;
+//import java.nio.file.Files;
+//import java.nio.file.Paths;
+//import java.util.ArrayList;
+//import java.util.Collections;
+//import java.util.List;
+//import java.util.Scanner;
 
 import javafx.scene.chart.LineChart;
 import javafx.scene.chart.NumberAxis;
@@ -70,48 +70,48 @@ public class FXMLDocumentController implements Initializable {
     @FXML
      BorderPane bp;
     
-    ArrayList<point> p = new ArrayList<point>();
+//    ArrayList<point> p = new ArrayList<point>();
     @FXML
    public void brwase(ActionEvent e)    {
-       FileChooser f1=new FileChooser();
-       f1.getExtensionFilters().addAll(new ExtensionFilter("txt files","*.txt"));
-       
-      File f2=f1.showOpenDialog(null);
-       
-       if (f2!=null) {
-           tf.setText(f2.getAbsolutePath());
-           } 
-       else{
-       lb.setText("file not found");
-       }
+//       FileChooser f1=new FileChooser();
+//       f1.getExtensionFilters().addAll(new ExtensionFilter("txt files","*.txt"));
+//       
+//      File f2=f1.showOpenDialog(null);
+//       
+//       if (f2!=null) {
+//           tf.setText(f2.getAbsolutePath());
+//           } 
+//       else{
+//       lb.setText("file not found");
+//       }
        
 
 ///////////////////////////////////////////////////////////
 
-List<String> lines = Collections.emptyList();
-    try {
-      lines = Files.readAllLines(Paths.get(f2.getAbsolutePath()), StandardCharsets.UTF_8);
-  
-      
-System.out.println();
-      Scanner scannerA = new Scanner(f2);
-      int lineNumber = 1;
-    while(scannerA.hasNextLine())
-    {
-        String line = scannerA.nextLine();
-        System.out.println(line);
-        pre.setText(line);
-//        p.set(lineNumber,p.add());
-       
-        lineNumber ++;
-    }
-     
-        
-    } 
-    catch (IOException ex) {
-      // TODO Auto-generated catch block
-      
-    }
+//List<String> lines = Collections.emptyList();
+//    try {
+//      lines = Files.readAllLines(Paths.get(f2.getAbsolutePath()), StandardCharsets.UTF_8);
+//  
+//      
+//System.out.println();
+//      Scanner scannerA = new Scanner(f2);
+//      int lineNumber = 1;
+//    while(scannerA.hasNextLine())
+//    {
+//        String line = scannerA.nextLine();
+//        System.out.println(line);
+//        pre.setText(line);
+////        p.set(lineNumber,p.add());
+//       
+//        lineNumber ++;
+//    }
+//     
+//        
+//    } 
+//    catch (IOException ex) {
+//      // TODO Auto-generated catch block
+//      
+//    }
        
    
 
