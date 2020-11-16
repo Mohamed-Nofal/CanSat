@@ -1,4 +1,4 @@
-#G round Station
+# Ground Station
 
 ## this gui is based on javaFX
 ## this app deal with files with txt extensions or csv files 
