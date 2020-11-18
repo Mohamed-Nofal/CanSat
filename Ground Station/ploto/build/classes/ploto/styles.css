@@ -1,0 +1,44 @@
+
+/* 
+    Created on : Jun 25, 2020, 4:19:40 PM
+    Author     : Mohamed
+*/
+
+
+
+
+
+
+.label {
+    -fx-font-size: 16px;
+    -fx-font-weight:bold;
+    -fx-font-family:"Arial Black";
+    -fx-text-fill: #34495e;
+}
+
+
+.button {
+    -fx-font-weight:bold;
+    -fx-font-family:"Arial Black";
+    -fx-text-fill:white;
+    -fx-font-size: 16px;
+    -fx-background-color:linear-gradient(#f1c40f,#e67e22);
+    -fx-background-radius: 10.0;
+    
+}
+
+.root{
+-fx-background-color: lightgrey;
+/*-fx-background-color: rgb(32,74,132);*/
+
+}
+
+.text{
+    -fx-font-weight:bold;
+    -fx-font-family:"Arial Black";
+    -fx-text-fill:white;
+    -fx-font-size: 16px;
+    
+    
+    
+}
