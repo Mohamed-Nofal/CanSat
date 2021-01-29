@@ -56,8 +56,9 @@ uint8_t readGPS(GPS *gps){
 				
 			}
 			if(commas==7&&temp!=','){
-				*(num) = temp;
+				*(num+i-1) = temp;
 				i++;
+				if(i==2)
 				goto ending;
 			}
 			if(temp==','){
@@ -72,7 +73,6 @@ uint8_t readGPS(GPS *gps){
 	sscanf(lati,"%f",&(*gps).latitude);
 	sscanf(longi,"%f",&(*gps).longitude);
 	sscanf(num,"%d",&(*gps).NoS);
-		sscanf(lati,"%s",&(*gps).pp);
 
 
 }
