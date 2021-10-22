@@ -1,0 +1,18 @@
+code :
+
+we have developed sensors codes except MPU code , we have used DMP code to solve Gimple lock problem in euler estimation and in order to make the sensor work independently and give us readings whenever requested to solve delay problem 
+
+lab view :
+
+we have configured  data rate and COM Ports using VISA Configure Serial Port Block , then The configured output fed in to Visa Read block which reads the data as a string and stores as a string  separated by tabulated character , then display them in lables ,wave forms and gps window to show  the exact lacation of can .
+in order to have a more accurate reading ,Temperature label in UI represent the average of the BMB and DHT values ,and similarly, altitude lable repersent the average of BMB and Gps values 
+
+harware :
+
+The Hardware System consists of three PCBs connected by wires.One for power and the other two for signals and MCU.The power system has protection from short circuit and reverse bias by connecting fuse and diode series to the power source.The power source is a 9volt battery, then it converted to 5volt by using 7805 voltage regulator.Arduino nano is used as MCU because of its small size and easy to use.The PCBs are handmade to save cost.
+
+
+design :
+
+Our design is simple , consist 3 rods fixed on the base , nuts to fix 3 PCB which contains our electronic component and cover to protect them during landing . the cover With two apertures on the side one for GPS antenna and one for switch  to turn on and off the project .
+It has been manufactured using Artelon because it is easy to manufacture , Lightweight ,Not so expensive

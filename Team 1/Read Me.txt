@@ -1,0 +1,29 @@
+Write short note about your design and any valiable data
+
+Our project is a can sat (small  satellite in the size of a can), the project mission is to detect the  temperature, pressure, relative humidity, . And it's also provided with a navigation system which describes the satellite location ( latitude, longitude, altitude, satellite position...), And all the data are showing on the ground station indicators.
+The project consists of 4 Sections:
+
+1) The coding part: using c++ we developed a coding system which makes all sensors work and store there data in SD card, after receiving the data from the can rf sensor by the rf sensor on the ground station.
+
+2) Pcb: our project consists of three pcb layers :
+1- atmega sensor, SD card, and power circuit
+2-BMP, MPU, DHT sensors
+3-  RF, GPS sensors
+
+3) structure: 
+Used App is (Solid Works)
+ It’s the 3D Design for the CanSat which contains:
+Base : contains the battery.
+ Can Body : consists of four parts: 
+1st : is between the base and fist PCB layer.
+ 2nd: is between the first PCB layer and second one.
+ 3rd : is the second and the third layer.
+ 4th : The last part contains the parachute holders.
+ -It devided into four parts to put PCB boards between the parts.
+-There are also four nails with nuts which connect all parts of the CanSat together.
+4- Ground station: Used App is: (LabView)
+-Shows a 3D picture for the satellite with the orientation angles which get from MPU sensor.
+- Recieves data from SD Card and configure if it's reading data 
+from sensors or not.
+- Shows each sensor data on indicators.
+- Presents the GPS data (Latitude, Altitude, UTC-Time), and shows a map describes the can sat location .
