@@ -1,0 +1,23 @@
+Coding:
+
+The distinctive in our project :
+1- We used new module called 10 dof imu 
+     These module contain BMP280 & MPU9250 in one chip
+     That save space so we could make all the project in 3 PCBs single layer 
+     BMP280 data is more acurate than BMP180
+     MPU9250 has a magnometer so we have bonus data (compass)
+     
+2-We have Bonus Sensor (MQ135) that would bd in the roof of the structre  testing air Quality as insitu data
+     MQ135 gas sensor has high sensitivity to ammonia gas, sulfide, benzene series steam, also can monitor smoke and other toxic gases well. 
+     
+3-We used OOP (classes & functions) and added alot of comments to make the code more readable 
+
+4-These code didn't use any external libraries ... just DataSheet :)     
+
+Structure :
+
+we notice that the process of assembling and dismantling the structure might be difficult and take a bit of time, also in case of failure of any component or any connection it will be difficult to get to the damaged parts through this semi-complicated structure
+so we designed our structure to make this process smoothly and easily. in our design, we can reach each PCB board separately without dismantling all the structures and the other PCB boards, we used ribbon cables to connect PCB boards, that facilitate disconnection of any board before removing it for check
+we also kept in mind:
+1- a house for the switch nearby the battery, this switch is connected directly with the battery, so we are able to connect and disconnect the power from the whole CANSAt
+2- three holes in the upper plate, the first for RF antenna, second for Gps antenna's wire, third for Air Quality sensor pins
