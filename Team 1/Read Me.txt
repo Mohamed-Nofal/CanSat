@@ -1,5 +1,3 @@
-Write short note about your design and any valiable data
-
 Our project is a can sat (small  satellite in the size of a can), the project mission is to detect the  temperature, pressure, relative humidity, . And it's also provided with a navigation system which describes the satellite location ( latitude, longitude, altitude, satellite position...), And all the data are showing on the ground station indicators.
 The project consists of 4 Sections:
 
